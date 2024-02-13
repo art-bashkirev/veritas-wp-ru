@@ -25,4 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      
+      - name: Github Action for LaTeX
+        uses: xu-cheng/latex-action@3.1.0
+        with:
+          root_file: |
+              main.tex
+ 
