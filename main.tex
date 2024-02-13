@@ -4,7 +4,7 @@
 
 
 \usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
+% \usepackage[T2A]{fontenc}
 
 \usepackage{blindtext}
 \usepackage{titlesec}
@@ -30,24 +30,29 @@
     \tableofcontents
 \newpage
 
-\newpage
+
     \section{Введение}
-    \import{sections/}{introduction}
+    \subfile{sections/introduction}
 \newpage
+
     \section{Техническая архитектура}
-    \import{sections/}{tech_architecture}
+    \subfile{sections/tech_architecture}
 \newpage
+
     \section{Взаимосвязь архитектуры}
-    \import{sections/}{interconnectivity}
+    \subfile{sections/interconnectivity}
 \newpage
+
     \section{Оценка}
-    \import{sections/}{evaluation}
+    \subfile{sections/evaluation}
 \newpage
+
     \section{Заключение}
-    \import{sections/}{conclusion}
+    \subfile{sections/conclusion}
 \newpage
+
     \section{Приложение}
-    \import{sections/}{appendix}
-\newpage
+    \subfile{sections/appendix}
+
 
 \end{document}
