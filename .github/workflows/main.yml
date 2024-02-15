@@ -25,6 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Uncache Docker images.
+        uses: ScribeMD/docker-cache@0.3.7
+        with:
+           key: docker-${{ runner.os }}
+
       - name: Github Action for LaTeX
         uses: xu-cheng/latex-action@3.1.0
         with:
