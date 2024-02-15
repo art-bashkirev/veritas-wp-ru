@@ -34,6 +34,7 @@ jobs:
         uses: xu-cheng/latex-action@3.1.0
         with:
           latexmk_use_xelatex: true
+          extra_system_packages: msttcorefonts-installer fontconfig
           root_file: |
               main.tex
 
