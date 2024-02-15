@@ -28,6 +28,7 @@ jobs:
       - name: Github Action for LaTeX
         uses: xu-cheng/latex-action@3.1.0
         with:
+          latexmk_use_xelatex: true
           root_file: |
               main.tex
 
@@ -36,4 +37,7 @@ jobs:
         with:
           name: PDF
           path: main.pdf
- 
+      - name: Cache Docker images.
+        uses: ScribeMD/docker-cache@0.3.7
+        with:
+           key: docker-${{ runner.os }}
