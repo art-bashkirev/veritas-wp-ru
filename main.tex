@@ -1,24 +1,38 @@
 \documentclass[12pt]{article}
 \usepackage[T2A]{fontenc}
 \usepackage{fontspec}
+\usepackage{geometry}
+
+
+\geometry{
+    a4paper,
+    % total={297mm,210mm},
+    left=30mm,
+    right=15mm,
+    top=20mm,
+    bottom=25mm
+}
 \setmainfont{Times New Roman}
 
 
 \usepackage{blindtext}
 \usepackage{titlesec}
 \usepackage{graphicx}
-\graphicspath{{images/}}
+
+\graphicspath{{./images/}}
 
 \usepackage{blindtext}
 
 \usepackage{subfiles} % Best loaded last in the preamble
 
 
-\title{Разработка распределенной системы онлайн-судьи Veritas}
+\title{Разработка распределенной системы онлайн-судьи}
 \author{Артём Башкирев}
 \date{07 Ноября 2023}
 
 \renewcommand*\contentsname{Содержание}
+\renewcommand*\figurename{Рис.}
+\renewcommand*\listfigurename{Список иллюстраций}
 
 \begin{document}
 
@@ -48,12 +62,9 @@
 
     \section{Заключение}
     \subfile{sections/conclusion}
-    \thispagestyle{empty}
 \newpage
 
     \section{Приложение}
     \subfile{sections/appendix}
-    \thispagestyle{empty}
-
 
 \end{document}
