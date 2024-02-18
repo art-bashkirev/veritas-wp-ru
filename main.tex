@@ -36,7 +36,43 @@
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \newpage
+    
+    \begin{center}
+    МОУ "Лицей №26" \\
+    \end{center}
+    
+    \vspace{8em}
+    % \begin{center}
+    % \Large Название кафедры \\ 
+    % \end{center}
+    
+    \vspace{2em}
+    
+    \begin{center}
+    \textsc{\textbf{Разработка распределенной системы онлайн-судьи}}
+    \end{center}
+    
+    \vspace{10em}
+    
+    \newbox{\lbox}
+    \savebox{\lbox}{\hbox{Комиссарова Елена Сергеевна}}
+    \newlength{\maxl}
+    \setlength{\maxl}{\wd\lbox}
+    \hfill\parbox{11cm}{
+    \hspace*{5cm}\hspace*{-5cm}Разработал:\hfill\hbox to\maxl{Артём Башкирев\hfill}\\
+    \hspace*{5cm}\hspace*{-5cm}Преподаватель:\hfill\hbox to\maxl{Комиссарова Елена Сергеевна}\\
+    }
+    
+    \vspace{\fill}
+    
+    \begin{center}
+    Подольск \\2024
+    \end{center}
+    
+\end{titlepage}
+% \maketitle
 \thispagestyle{empty}
 
 \newpage
